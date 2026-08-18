@@ -23,8 +23,11 @@
 
 <style>
   html, body { margin: 0; padding: 0; background: #0d0f14; color: #ece5d3; }
-  html, body, #raiz { height: 100%; }
-  body { overscroll-behavior: none; -webkit-text-size-adjust: 100%; }
+  /* body fixo: elimina a rolagem elástica do Safari, que fazia o layout dançar */
+  html { height: 100%; }
+  body { position: fixed; inset: 0; overflow: hidden; overscroll-behavior: none;
+         -webkit-text-size-adjust: 100%; touch-action: manipulation; }
+  #raiz { height: 100%; }
   #carregando {
     position: fixed; inset: 0; display: grid; place-content: center; gap: 10px;
     text-align: center; font-family: Georgia, serif;

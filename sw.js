@@ -1,6 +1,6 @@
 /* Service worker: guarda o app para funcionar sem internet.
    Troque a VERSAO quando publicar uma atualização. */
-const VERSAO = "westeros-v2";
+const VERSAO = "westeros-v3";
 const ARQUIVOS = [
   "./",
   "./index.html",
