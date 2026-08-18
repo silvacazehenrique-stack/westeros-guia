@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="ceu" cx="46%" cy="34%" r="76%">
+      <stop offset="0%" stop-color="#1b2637"/><stop offset="100%" stop-color="#0a0c11"/>
+    </radialGradient>
+    <linearGradient id="ouro" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f4e4b4"/><stop offset="100%" stop-color="#c69a34"/>
+    </linearGradient>
+    <linearGradient id="papel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#e3cf9e"/><stop offset="100%" stop-color="#bda471"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="url(#ceu)"/>
+
+  <!-- Westeros estilizado, deslocado para a esquerda -->
+  <g transform="translate(-14 0)">
+    <path d="M168 84 Q150 120 162 150 Q142 178 158 206
+             Q136 240 156 270 Q134 306 154 338 Q140 372 162 398
+             Q186 424 226 428 Q262 434 288 414 Q312 392 302 360
+             Q322 322 300 292 Q318 254 296 220 Q312 180 288 148
+             Q272 108 232 90 Z"
+          fill="url(#papel)"/>
+    <!-- costa marcada -->
+    <path d="M168 84 Q150 120 162 150 Q142 178 158 206
+             Q136 240 156 270 Q134 306 154 338 Q140 372 162 398
+             Q186 424 226 428 Q262 434 288 414 Q312 392 302 360
+             Q322 322 300 292 Q318 254 296 220 Q312 180 288 148
+             Q272 108 232 90 Z"
+          fill="none" stroke="#6b5330" stroke-width="5" opacity="0.55"/>
+    <!-- a Muralha -->
+    <path d="M152 152 L296 145" stroke="#e8f5ff" stroke-width="14" stroke-linecap="round"/>
+  </g>
+
+  <!-- marcador dourado sobre o continente -->
+  <g transform="translate(212 268)">
+    <circle r="46" fill="none" stroke="url(#ouro)" stroke-width="6" opacity="0.55"/>
+    <path d="M0 34 C-24 6 -30 -6 -30 -18 A30 30 0 0 1 30 -18 C30 -6 24 6 0 34 Z"
+          fill="url(#ouro)" stroke="#3a2b0c" stroke-width="4"/>
+    <circle cy="-18" r="10.5" fill="#1a1408"/>
+  </g>
+
+  <!-- rosa dos ventos no mar, canto inferior direito -->
+  <g transform="translate(400 404)" opacity="0.9">
+    <circle r="40" fill="none" stroke="url(#ouro)" stroke-width="3.5"/>
+    <path d="M0 -56 L11 -13 L0 -23 L-11 -13 Z" fill="url(#ouro)"/>
+    <path d="M0 56 L11 13 L0 23 L-11 13 Z" fill="url(#ouro)" opacity="0.55"/>
+    <path d="M-56 0 L-13 -11 L-23 0 L-13 11 Z" fill="url(#ouro)" opacity="0.55"/>
+    <path d="M56 0 L13 -11 L23 0 L13 11 Z" fill="url(#ouro)" opacity="0.55"/>
+  </g>
+</svg>

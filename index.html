@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Westeros — Guia da 1ª Temporada</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+<meta name="description" content="Guia interativo cena a cena da 1ª temporada: mapa de Westeros e Essos, quem está em cada cena e trajetos sem spoiler.">
+<meta name="theme-color" content="#0d0f14">
+<meta name="color-scheme" content="dark">
+
+<!-- iPhone: abre em tela cheia quando adicionado à tela de início -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Westeros">
+<link rel="apple-touch-icon" href="./apple-touch-icon.png">
+
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="icon" type="image/png" sizes="192x192" href="./icone-192.png">
+<link rel="icon" type="image/svg+xml" href="./icone.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<style>
+  html, body { margin: 0; padding: 0; background: #0d0f14; color: #ece5d3; }
+  html, body, #raiz { height: 100%; }
+  body { overscroll-behavior: none; -webkit-text-size-adjust: 100%; }
+  #carregando {
+    position: fixed; inset: 0; display: grid; place-content: center; gap: 10px;
+    text-align: center; font-family: Georgia, serif;
+  }
+  #carregando b { font-size: 15px; letter-spacing: .22em; color: #f0dfae; font-weight: 600; }
+  #carregando span { font-size: 13px; color: #b0a890; font-style: italic; }
+</style>
+</head>
+<body>
+  <div id="raiz">
+    <div id="carregando"><b>WESTEROS</b><span>desenrolando o mapa&hellip;</span></div>
+  </div>
+  <script src="./app.js" defer></script>
+</body>
+</html>
